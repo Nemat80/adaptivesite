@@ -1,0 +1,237 @@
+.learning {
+    margin: 0 auto;
+    margin-top: -100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &-title {
+        z-index: 2;
+        font-size: calc(20px + 44 * (100vw / 1200));
+        font-weight: bold;
+        line-height: 38px;
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    &-tabs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &-tabs-content {
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 50px 200px rgb(170, 255, 0));
+    }
+
+    &-tabs-item {
+        display: none;
+    
+
+        &.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-tabs-image {
+        transition: all 0.3s ease;
+        max-width: 80%;
+    }
+
+    &-tabs-nav {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 0;
+    
+    }
+    .swiper-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        overflow-x: hidden;
+
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .swiper-button-next,.swiper-button-prev {
+        color: rgb(162, 243, 0);
+    }
+
+    &-tabs-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #22212b;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        // width: 360px;
+        // height: 150px;
+        width: calc(170px + 150 * (100vw / 1200));
+        height: calc(100px + 50 * (100vw / 1200));
+        gap: 10px;
+        transition: all 0.3s ease;
+
+        &.active {
+            background-color: #ffffff;
+            outline: 0.5px solid $neutral;
+            transition: all 0.5s ease;
+        }
+        &.active > p{
+            color: black;
+            transition: all 0.5s ease;
+        }
+
+    }
+
+
+
+    &-tab-title {
+        padding-left: 10px;
+        width: 100%;
+        color: white;
+        font-size: calc(16px + 8 * (100vw / 1200));
+        font-weight: bold;
+        text-align: start;
+    }
+
+    &-tab-desc {
+        font-size: calc(15px + 4 * (100vw / 1200));
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        gap: 30px;
+    }
+
+    &-tab-count {
+        padding: 10px 15px;
+        background-color: yellow;
+        border-radius: 50%;
+        font-size: calc(10px + 10 * (100vw / 1200));
+    }
+
+    &-tab-subtitle {
+        font-size: 20px;
+        color: $sub;
+    }
+
+    @media (max-width: $breakpoint992) {
+        &-container {}
+
+        &-title {
+            margin-top: 120px;
+        }
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+    @media (max-width: $breakpoint768) {
+        &-container {}
+
+        &-title {
+        }
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+    @media (max-width: $breakpoint480) {
+        &-container {}
+
+        &-title {}
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+}
