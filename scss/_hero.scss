@@ -140,8 +140,9 @@
     }
 
     &-poster {
-        z-index: -1;
-        width: calc(40% + 20 * (100vw / 1200));
+        z-index: 1;
+        // width: calc(40% + 20 * (100vw / 1200));
+        width: 330px;
         display: flex;
         align-items: center;
         justify-content: center;

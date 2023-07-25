@@ -386,8 +386,8 @@ input {
   background-size: 20vw;
 }
 .top-poster {
-  z-index: -1;
-  width: calc(40% + 1.6666666667vw);
+  z-index: 1;
+  width: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
