@@ -387,7 +387,7 @@ input {
 }
 .top-poster {
   z-index: 1;
-  width: 330px;
+  width: calc(40% + 1.6666666667vw);
   display: flex;
   align-items: center;
   justify-content: center;
