@@ -34,7 +34,8 @@
         @media (max-width:$breakpoint480) {
             flex-direction: column;
             padding: 20px 5px;
-            background: none;
+            background: transparent;
+
         }
 
     }

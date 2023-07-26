@@ -1427,7 +1427,7 @@ main {
   .callback-block {
     flex-direction: column;
     padding: 20px 5px;
-    background: none;
+    background: transparent;
   }
 }
 .callback-left {
