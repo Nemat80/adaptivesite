@@ -371,6 +371,9 @@ input {
   background-color: yellow;
   font-weight: bold;
 }
+.top-btn-two:hover a {
+  color: white !important;
+}
 .top-btn-two a {
   color: black !important;
 }
@@ -1420,6 +1423,12 @@ main {
     flex-direction: column;
   }
 }
+@media (max-width: 479.98px) {
+  .callback-block {
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+}
 .callback-left {
   z-index: 15;
   display: flex;
@@ -1463,6 +1472,7 @@ main {
 @media (max-width: 479.98px) {
   .callback-option {
     padding: 40px 20px;
+    width: 100%;
   }
 }
 .callback-option-top {
@@ -1612,12 +1622,12 @@ main {
 }
 @media (max-width: 767.98px) {
   .callback-form {
-    width: 95%;
+    width: 100%;
   }
 }
 @media (max-width: 479.98px) {
   .callback-form {
-    width: 95%;
+    width: 100%;
   }
 }
 .callback-alert {
@@ -1632,13 +1642,17 @@ main {
   color: white;
   width: 80%;
   font-size: calc(14px + 0.8333333333vw);
-  padding: 10px 0px;
   border-bottom: 1px solid rgb(255, 255, 255);
   padding: 10px 10px;
 }
 @media (max-width: 479.98px) {
   .callback-form-title {
     font-size: 18px;
+  }
+}
+@media (max-width: 479.98px) {
+  .callback-form-title {
+    width: 100%;
   }
 }
 .callback .callback-input {
@@ -1650,6 +1664,11 @@ main {
   color: #040b2b;
   background-color: rgba(217, 228, 242, 0.7647058824);
   transition: ease 0.3s;
+}
+@media (max-width: 479.98px) {
+  .callback .callback-input {
+    width: 100%;
+  }
 }
 .callback .callback-input._error {
   outline: 2px solid rgb(255, 0, 0);

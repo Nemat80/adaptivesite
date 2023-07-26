@@ -31,6 +31,10 @@
         @media (max-width:$breakpoint768) {
             flex-direction: column;
         }
+        @media (max-width:$breakpoint480) {
+            flex-direction: column;
+            padding: 20px 5px;
+        }
 
     }
 
@@ -74,6 +78,7 @@
 
         @media (max-width:$breakpoint480) {
             padding: 40px 20px;
+            width: 100%;
         }
     }
 
@@ -248,11 +253,11 @@
 
 
         @media (max-width:$breakpoint768) {
-            width: 95%;
+            width: 100%;
         }
 
         @media (max-width:$breakpoint480) {
-            width: 95%;
+            width: 100%;
         }
     }
 
@@ -269,12 +274,14 @@
         color: white;
         width: 80%;
         font-size: calc(14px + 10 * (100vw / 1200));
-        padding: 10px 0px;
         border-bottom: 1px solid rgb(255, 255, 255);
         padding: 10px 10px;
 
         @media (max-width:$breakpoint480) {
             font-size: 18px;
+        }
+        @media (max-width:$breakpoint480) {
+            width: 100%;
         }
     }
 
@@ -287,6 +294,11 @@
         color: #040b2b;
         background-color: #d9e4f2c3;
         transition: ease 0.3s;
+
+        @media (max-width:$breakpoint480) {
+            width: 100%;
+        }
+
 
         &._error {
             outline: 2px solid rgb(255, 0, 0);
