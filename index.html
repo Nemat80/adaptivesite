@@ -41,6 +41,7 @@
             <div class="logo">
                 <img src="assets/image/color_logo.svg" alt="">
             </div>
+
             <nav class="nav">
                 <ul class="nav-products">
                     <li class="nav-products-item"><a href="" class="nav-products-link">Product 1</a></li>
@@ -69,6 +70,52 @@
                 <span></span>
             </div>
         </div>
+
+        <!-- TradingView Widget BEGIN -->
+
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container header-widget">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Биткоин"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Эфириум"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": false,
+                                        "displayMode": "adaptive",
+                                            "locale": "ru"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+
+        <!-- TradingView Widget END -->
+
+
     </header>
 
     <!-- END HEADER -->
@@ -89,7 +136,7 @@
                     </p>
                 </div>
                 <h1 class="top-title">3 месячный курс обучения</h1>
-                <p class="top-subtitle">Обучение на рынках форекса 3 месяца, 1 месяц изучение теории, 2 месяца практики
+                <p class="top-subtitle">на рынках форекс, криптовалют и акций.
                 </p>
                 <div class="top-btn-group">
                     <button class="top-btn top-phone-btn">
@@ -106,7 +153,25 @@
                 </div>
             </div>
             <div class="top-right">
-                <img class="top-poster" src="./assets/image/poster.jpeg" alt="">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "FX:EURUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "ru",
+                                "dateRange": "12M",
+                                "colorTheme": "dark",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
             </div>
         </div>
     </section>
@@ -128,8 +193,8 @@
                             <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
                             <p class="role-text">Для всех желающих измемнить свою жизнь.</p>
                         </div>
-                        <p class="auditorium-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                            necessitatibus aliquid doloribus eligendi laborum.</p>
+                        <p class="auditorium-desc">Те, кто стремится к лучшему, кто хочет добиться результата и поменять
+                            свой образ жизни, свою жизнь.</p>
                     </div>
                     <div class="auditorium-box">
 
@@ -137,24 +202,24 @@
                             <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
                             <p class="role-text">Для тех, кто готов работать упорно.</p>
                         </div>
-                        <p class="auditorium-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                            necessitatibus aliquid doloribus eligendi laborum.</p>
+                        <p class="auditorium-desc">Те, кто любит усердно учится и упорно трудится. 50% от нас, 50% от
+                            вас.</p>
                     </div>
                     <div class="auditorium-box">
                         <div class="auditorium-role">
                             <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
                             <p class="role-text">От 11 лет, до 70лет.</p>
                         </div>
-                        <p class="auditorium-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                            necessitatibus aliquid doloribus eligendi laborum.</p>
+                        <p class="auditorium-desc">Возраст не имеет значения, главное способность учится и работать над
+                            полученными знаниями.</p>
                     </div>
                     <div class="auditorium-box">
                         <div class="auditorium-role">
                             <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
-                            <p class="role-text">Для тех, кто умеет работать на компьютере</p>
+                            <p class="role-text">Для тех, кто умеет работать на компьютере.</p>
                         </div>
-                        <p class="auditorium-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                            necessitatibus aliquid doloribus eligendi laborum.</p>
+                        <p class="auditorium-desc">Без умения работать на компьютере, освоить знания по трейдингу не
+                            возможно.</p>
                     </div>
                 </div>
             </div>
@@ -1141,8 +1206,7 @@
                             <h1 class="callback-form-title">Введите ваши данные
                                 для связи c вами</h1>
                             <input class="callback-input _req _name" name="name" placeholder="Имя" type="text">
-                            <input class="callback-input _req _email " name="email" placeholder="email"
-                                type="email">
+                            <input class="callback-input _req _email " name="email" placeholder="email" type="email">
                             <input class="callback-input _req _tel" name="tel" placeholder="+998" type="tel">
                             <button type="submit" class="callback-form-btn btn">
                                 Оставить Заявку
@@ -1154,6 +1218,8 @@
         </section>
 
         <!-- END CALLBACK -->
+
+
 
     </main>
 
@@ -1225,6 +1291,8 @@
     </footer>
 
     <!-- END FOOTER SECTION -->
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

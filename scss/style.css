@@ -66,11 +66,11 @@ input {
   position: fixed;
   width: 100%;
   height: 100px;
-  padding: 10px 0px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   background: transparent;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .header-container {
   display: flex;
@@ -267,7 +267,7 @@ input {
 }
 
 .top {
-  padding-top: 80px;
+  padding-top: 160px;
   display: flex;
   width: 100%;
   min-height: 110vh;
@@ -285,7 +285,7 @@ input {
 .top-left {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   width: 50%;
   height: 70vh;
@@ -378,23 +378,12 @@ input {
   color: black !important;
 }
 .top-right {
-  margin-top: 70px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 70vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20vw;
-}
-.top-poster {
-  z-index: 1;
-  width: calc(40% + 1.6666666667vw);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  filter: drop-shadow(0px 100px 150px #a9fa07);
+  height: 90%;
 }
 @media (max-width: 991.98px) {
   .top {
@@ -412,7 +401,7 @@ input {
 }
 @media (max-width: 767.98px) {
   .top {
-    margin-top: 30px;
+    margin-top: 80px;
   }
   .top-container {
     justify-content: space-between;
@@ -450,10 +439,9 @@ input {
     justify-content: space-around;
   }
   .top-right {
-    width: 70%;
+    width: 100%;
     align-items: flex-end;
-    padding-left: 20px;
-    height: 60vh;
+    height: 100%;
   }
   .top-poster {
     margin-left: -60px;
@@ -481,6 +469,7 @@ main {
 }
 
 .auditorium {
+  padding-top: 100px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -490,14 +479,19 @@ main {
     margin-bottom: 100px;
   }
 }
+@media (max-width: 991.98px) {
+  .auditorium {
+    padding-top: 70px;
+  }
+}
 @media (max-width: 767.98px) {
   .auditorium {
-    padding-top: 200px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 479.98px) {
   .auditorium {
-    padding-top: 50px;
+    padding-top: -50px;
   }
 }
 .auditorium-container {

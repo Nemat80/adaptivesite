@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
 
     document.querySelector('.header').style.top = '0';
   } else {
-    document.querySelector('.header').style.top = '-100px';
+    document.querySelector('.header').style.top = '-200px';
   }
 
   prevScrollPos = currentScrollPos;
@@ -173,7 +173,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
         if (emailTest(input)) {
           formAddError(input);
           error++;
-        } 
+        }
       }
     }
 
@@ -195,3 +195,14 @@ document.getElementById('form').addEventListener('submit', function (e) {
   }
 
 });
+
+
+
+
+
+
+
+
+// traiding view
+
+
