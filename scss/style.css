@@ -1667,7 +1667,7 @@ main {
 }
 @media (max-width: 479.98px) {
   .callback .callback-input {
-    width: 100%;
+    width: 98%;
   }
 }
 .callback .callback-input._error {
