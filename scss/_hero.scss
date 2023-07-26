@@ -122,6 +122,13 @@
         background-color: yellow;
         font-weight: bold;
 
+        &:hover {
+            
+            & a {
+                color: white !important;
+            }
+        }
+
         & a {
             color: black !important;
         }
