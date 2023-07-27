@@ -30,7 +30,6 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-        filter: drop-shadow(1000px 300px 300px yellowgreen);
 
         @media (max-width:$breakpoint768) {
             flex-direction: column;

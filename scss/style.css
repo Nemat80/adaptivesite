@@ -683,14 +683,12 @@ main {
   width: 100%;
 }
 .learning-tabs-content {
-  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   width: 100%;
   margin-bottom: 20px;
-  filter: drop-shadow(0px 50px 200px rgb(170, 255, 0));
 }
 .learning-tabs-item {
   display: none;
@@ -1015,9 +1013,9 @@ main {
   justify-content: flex-start;
   width: 50%;
   height: 100%;
-  filter: drop-shadow(-300px 100px 200px yellowgreen);
 }
 .author-img {
+  left: 0;
   width: 100%;
   margin-left: -40px;
   height: 100%;
@@ -1157,7 +1155,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  filter: drop-shadow(1000px 300px 300px yellowgreen);
 }
 @media (max-width: 767.98px) {
   .result-block {
