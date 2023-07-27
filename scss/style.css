@@ -1198,7 +1198,7 @@ main {
   left: 0;
   border-radius: 50%;
   background: radial-gradient(circle, rgb(154, 255, 2), transparent);
-  -webkit-filter: blur(60px);
+  -webkit-filter: blur(30px);
   opacity: 0.4;
 }
 @media (max-width: 767.98px) {
