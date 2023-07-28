@@ -158,9 +158,11 @@
     }
 
     &-tab-count {
-        padding: 10px 15px;
+        padding: 8px 14px;
         background-color: yellow;
         border-radius: 50%;
+        color: black !important;
+        font-weight: bold;
         font-size: calc(10px + 10 * (100vw / 1200));
     }
 

@@ -93,6 +93,7 @@ input {
 }
 .logo img {
   padding-top: 10px;
+  padding-right: 20px;
   width: 110px;
 }
 
@@ -314,7 +315,7 @@ input {
 }
 
 .top {
-  padding-top: 160px;
+  padding-top: 40px;
   display: flex;
   width: 100%;
   min-height: 110vh;
@@ -446,9 +447,6 @@ input {
   }
 }
 @media (max-width: 991.98px) {
-  .top {
-    padding-top: 100px;
-  }
   .top-about {
     width: 100%;
   }
@@ -461,7 +459,7 @@ input {
 }
 @media (max-width: 767.98px) {
   .top {
-    margin-top: 80px;
+    margin-top: 30px;
   }
   .top-container {
     justify-content: space-between;
@@ -529,29 +527,14 @@ main {
 }
 
 .auditorium {
-  padding-top: 100px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  margin-top: -60px;
 }
 @media (max-width: 1600px) {
   .auditorium {
-    margin-bottom: 150px;
-  }
-}
-@media (max-width: 991.98px) {
-  .auditorium {
-    padding-top: 70px;
-  }
-}
-@media (max-width: 767.98px) {
-  .auditorium {
-    padding-top: 20px;
-  }
-}
-@media (max-width: 479.98px) {
-  .auditorium {
-    padding-top: -50px;
+    margin-bottom: 100px;
   }
 }
 .auditorium-container {
@@ -559,16 +542,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-@media (max-height: 569px) {
-  .auditorium-container {
-    padding-top: 300px;
-  }
-}
-@media (max-height: 450px) {
-  .auditorium-container {
-    padding-top: 200px;
-  }
 }
 .auditorium-tite {
   font-size: calc(20px + 3.6666666667vw);
@@ -850,9 +823,11 @@ main {
   gap: 30px;
 }
 .learning-tab-count {
-  padding: 10px 15px;
+  padding: 8px 14px;
   background-color: yellow;
   border-radius: 50%;
+  color: black !important;
+  font-weight: bold;
   font-size: calc(10px + 0.8333333333vw);
 }
 .learning-tab-subtitle {

@@ -1,14 +1,10 @@
 .top {
-    padding-top: 160px;
+    padding-top: 40px;
     display: flex;
     width: 100%;
     min-height: 110vh;
     margin: 0 auto;
     clear: both;
-
-    @media (max-height:569px) {
-
-    }
 
 
     &-container {
@@ -164,7 +160,6 @@
 
 
     @media (max-width: $breakpoint992) {
-        padding-top: 100px;
         &-about {
             width: 100%;
         }
@@ -177,7 +172,7 @@
     }
     @media (max-width:$breakpoint768) {
 
-        margin-top: 80px;
+        margin-top: 30px;
 
         &-container {
             justify-content: space-between;
