@@ -95,7 +95,7 @@ new Swiper('.learning-tabs-swiper', {
   slidesPerGroup: 1,
   centeredSlides: false,
   initialSlide: 1,
-  // loop: true,
+  loop: true,
   freeMode: true,
 
 })

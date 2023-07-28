@@ -63,7 +63,7 @@ input {
 
 .header {
   z-index: 99;
-  position: fixed;
+  position: sticky;
   width: 100%;
   height: 100px;
   display: flex;
