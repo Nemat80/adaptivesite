@@ -39,14 +39,14 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="assets/image/color_logo.svg" alt="">
+                <img src="assets/image/logo.png" alt="">
             </div>
 
             <nav class="nav">
                 <ul class="nav-products">
-                    <li class="nav-products-item"><a href="" class="nav-products-link">Product 1</a></li>
-                    <li class="nav-products-item"><a href="" class="nav-products-link">Product 2</a></li>
-                    <li class="nav-products-item"><a href="" class="nav-products-link">Product 3</a></li>
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Все курсы</a></li>
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Новости школы</a></li>
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Pейтинг учеников</a></li>
                 </ul>
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -56,12 +56,12 @@
                     </li>
                     <li class="nav-item">
                         <a href="https://instagram.com/sharktrading.uz" class="nav-link">
-                            <i class="nav-icon fa-brands fa-instagram fa-2xl"></i>
+                            <i class="nav-icon fa-brands fa-instagram fa-2xl instagram-icon"></i>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="https://t.me/sharktradingchat" class="nav-link">
-                            <i class="nav-icon fa-brands fa-telegram fa-2xl"></i>
+                            <i class="nav-icon fa-brands fa-telegram fa-2xl tg-icon"></i>
                         </a>
                     </li>
                 </ul>
@@ -70,9 +70,6 @@
                 <span></span>
             </div>
         </div>
-
-        <!-- TradingView Widget BEGIN -->
-
 
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container header-widget">
@@ -128,7 +125,7 @@
                 <div class="top-about">
                     <p class="top-desc">
                         <i class="fa-solid fa-users-line  top-icon"></i>
-                        <span>Курсы для всех с нуля</span>
+                        <span>Для всех возрастов</span>
                     </p>
                     <p class="top-duration">
                         <i class="top-icon fa-solid fa-clock"></i>
@@ -152,9 +149,120 @@
                     </button>
                 </div>
             </div>
-            <div class="top-right">
+            <div class="top-right"> 
                 <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
+<div class="tradingview-widget-container top-widget">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "ru",
+    "width": "100%",
+    "height": "100%",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(134, 137, 147, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Индексы",
+        "symbols": [
+          {
+            "s": "FOREXCOM:SPXUSD",
+            "d": "S&P 500"
+          },
+          {
+            "s": "FOREXCOM:NSXUSD",
+            "d": "US 100"
+          },
+          {
+            "s": "FOREXCOM:DJI",
+            "d": "Dow 30"
+          },
+          {
+            "s": "INDEX:NKY",
+            "d": "Nikkei 225"
+          },
+          {
+            "s": "INDEX:DEU40",
+            "d": "DAX Index"
+          },
+          {
+            "s": "FOREXCOM:UKXGBP",
+            "d": "UK 100"
+          }
+        ],
+        "originalTitle": "Indices"
+      },
+      {
+        "title": "Форекс",
+        "symbols": [
+          {
+            "s": "FX:EURUSD",
+            "d": "EUR to USD"
+          },
+          {
+            "s": "FX:GBPUSD",
+            "d": "GBP to USD"
+          },
+          {
+            "s": "FX:USDJPY",
+            "d": "USD to JPY"
+          },
+          {
+            "s": "FX:USDCHF",
+            "d": "USD to CHF"
+          },
+          {
+            "s": "FX:AUDUSD",
+            "d": "AUD to USD"
+          },
+          {
+            "s": "FX:USDCAD",
+            "d": "USD to CAD"
+          }
+        ],
+        "originalTitle": "Forex"
+      },
+      {
+        "title": "Криптовалюты",
+        "symbols": [
+          {
+            "s": "BINANCE:BTCUSDT"
+          },
+          {
+            "s": "BINANCE:ETHUSDT"
+          },
+          {
+            "s": "BINANCE:SOLUSDT"
+          },
+          {
+            "s": "BINANCE:XRPUSDT"
+          },
+          {
+            "s": "BINANCE:DOGEUSDT"
+          }
+        ]
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container top-widget-sub">
                     <div class="tradingview-widget-container__widget"></div>
                     <script type="text/javascript"
                         src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
@@ -190,7 +298,7 @@
                 <div class="auditorium-content">
                     <div class="auditorium-box">
                         <div class="auditorium-role">
-                            <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
+                            <p class="auditorium-role-icon fa-solid fa-person-arrow-up-from-line"></p>
                             <p class="role-text">Для всех желающих измемнить свою жизнь.</p>
                         </div>
                         <p class="auditorium-desc">Те, кто стремится к лучшему, кто хочет добиться результата и поменять
@@ -199,7 +307,7 @@
                     <div class="auditorium-box">
 
                         <div class="auditorium-role">
-                            <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
+                            <p class="auditorium-role-icon fa-solid fa-person-digging"></p>
                             <p class="role-text">Для тех, кто готов работать упорно.</p>
                         </div>
                         <p class="auditorium-desc">Те, кто любит усердно учится и упорно трудится. 50% от нас, 50% от
@@ -207,7 +315,7 @@
                     </div>
                     <div class="auditorium-box">
                         <div class="auditorium-role">
-                            <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
+                            <p class="auditorium-role-icon fa-solid fa-people-group"></p>
                             <p class="role-text">От 11 лет, до 70лет.</p>
                         </div>
                         <p class="auditorium-desc">Возраст не имеет значения, главное способность учится и работать над
@@ -215,7 +323,7 @@
                     </div>
                     <div class="auditorium-box">
                         <div class="auditorium-role">
-                            <p class="auditorium-role-icon fa-solid fa-user fa-2xl"></p>
+                            <p class="auditorium-role-icon fa-solid fa-desktop"></p>
                             <p class="role-text">Для тех, кто умеет работать на компьютере.</p>
                         </div>
                         <p class="auditorium-desc">Без умения работать на компьютере, освоить знания по трейдингу не
@@ -234,21 +342,30 @@
                 <h1 class="learning-title">Формат обучения</h1>
                 <div class="learning-tabs">
                     <div class="learning-tabs-content">
-                        <div class="learning-tabs-item tab show" id="tab_1">
-                            <img class="learning-tabs-image" src="assets/image/tab_image1.jpg" alt="s">
+                        <div class="learning-tabs-item tab" id="tab_1">
+                            <img class="learning-tabs-image" src="assets/image/ipad_1.png" alt="s">
                         </div>
-                        <div class="learning-tabs-item tab" id="tab_2">
-                            <img class="learning-tabs-image " src="assets/image/tabimage2.jpg" alt="">
+                        <div class="learning-tabs-item tab " id="tab_2">
+                            <img class="learning-tabs-image " src="assets/image/ipad_2.png" alt="">
                         </div>
                         <div class="learning-tabs-item tab" id="tab_3">
-                            <img class="learning-tabs-image" src="assets/image/tab_image1.jpg" alt="">
+                            <img class="learning-tabs-image" src="assets/image/ipad_3.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab show" id="tab_4">
+                            <img class="learning-tabs-image" src="assets/image/ipad_4.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_5">
+                            <img class="learning-tabs-image" src="assets/image/ipad_5.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_6">
+                            <img class="learning-tabs-image" src="assets/image/ipad_6.png" alt="">
                         </div>
                     </div>
                     <div class="learning-tabs-nav">
                         <div class="learning-tabs-swiper swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_1">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_1">
                                         <p class="learning-tab-title">3 месячный курс</p>
                                         <div class="learning-tab-desc">
                                             <p class="learning-tab-count">1</p>
@@ -257,7 +374,7 @@
                                     </button>
                                 </div>
                                 <div class="swiper-slide">
-                                    <button class="learning-tabs-btn tab_btn active" data-tab="#tab_2">
+                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_2">
                                         <p class="learning-tab-title">3 месячный курс</p>
                                         <div class="learning-tab-desc">
                                             <p class="learning-tab-count">2</p>
@@ -275,28 +392,28 @@
                                     </button>
                                 </div>
                                 <div class="swiper-slide">
-                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_1">
+                                    <button class="learning-tabs-btn tab_btn active" data-tab="#tab_4">
                                         <p class="learning-tab-title">3 месячный курс</p>
                                         <div class="learning-tab-desc">
-                                            <p class="learning-tab-count">3</p>
+                                            <p class="learning-tab-count">4</p>
                                             <p class="learning-tab-subtitle">раза в неделю по 2 часа</p>
                                         </div>
                                     </button>
                                 </div>
                                 <div class="swiper-slide">
-                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_2">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_5">
                                         <p class="learning-tab-title">3 месячный курс</p>
                                         <div class="learning-tab-desc">
-                                            <p class="learning-tab-count">3</p>
+                                            <p class="learning-tab-count">5</p>
                                             <p class="learning-tab-subtitle">раза в неделю по 2 часа</p>
                                         </div>
                                     </button>
                                 </div>
                                 <div class="swiper-slide">
-                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_3">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_6">
                                         <p class="learning-tab-title">3 месячный курс</p>
                                         <div class="learning-tab-desc">
-                                            <p class="learning-tab-count">3</p>
+                                            <p class="learning-tab-count">6</p>
                                             <p class="learning-tab-subtitle">раза в неделю по 2 часа</p>
                                         </div>
                                     </button>
@@ -698,7 +815,7 @@
                 <div class="author-block">
                     <div class="author-left">
                         <div class="author-photo"></div>
-                        <img class="author-img" src="assets/image/author_photo.jpeg" alt="Umidjon rizikov">
+                        <img class="author-img" src="assets/image/author_photo.png" alt="Umidjon rizikov">
                     </div>
                     <div class="author-right">
                         <h1 class="author-name">Умиджон Разиков</h1>
@@ -1233,7 +1350,7 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <div class="footer-logo">
-                    <img src="as" alt="">
+                    <img src="assets/image/logo.png" alt="shark trading">
                 </div>
                 <p class="footer-left-text">
                     <span>Адрес: г. Ташкент улица Фурката 18 блок 3 дом ориентир: Беньков колледж </span>
@@ -1262,11 +1379,9 @@
                 <div class="footer-right-first">
                     <p>Наши продукты</p>
                     <ul class="footer-right-list-first">
-                        <li class="footer-right-item"><a href="" class="footer-right-list-link">product 1</a></li>
-                        <li class="footer-right-item"><a href="" class="footer-right-list-link">product 2</a></li>
-                        <li class="footer-right-item"><a href="" class="footer-right-list-link">product 3</a></li>
-                        <li class="footer-right-item"><a href="" class="footer-right-list-link">product 4</a></li>
-                        <li class="footer-right-item"><a href="" class="footer-right-list-link">product 5</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Все курсы</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Новости школы</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Pейтинг учеников</a></li>
                     </ul>
                 </div>
                 <div class="footer-right-end">

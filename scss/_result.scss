@@ -41,8 +41,9 @@
             border-radius: 50%;
             background: radial-gradient(circle, rgb(154, 255, 2), transparent);
             -webkit-filter: blur(30px);
-            opacity: 0.4;
+            opacity: 0.7;
         }
+
 
         @media (max-width:$breakpoint768) {
             flex-direction: column;
@@ -68,8 +69,8 @@
     }
     &-count {
         position: absolute;
-        width: calc(20px + 20 * (100vw / 1200) );
-        height: calc(20px + 20 * (100vw / 1200) );
+        width: calc(15px + 20 * (100vw / 1200) );
+        height: calc(15px + 20 * (100vw / 1200) );
         top: calc(5px + 10 * (100vw / 1200));
         left: calc(5px + 15 * (100vw / 1200));
         display: flex;
@@ -80,7 +81,10 @@
         font-weight: bold;
         background-color: yellow;
 
+
         @media (max-width:$breakpoint768) {
+            width: calc(20px + 20 * (100vw / 1200) );
+            height: calc(20px + 20 * (100vw / 1200) );
             margin-top: 25px;
             margin-left: 25px;
         }
@@ -93,16 +97,23 @@
 
     &-progress {
         text-align: center;
-        font-size: calc(15px + 12 * (100vw / 1200));
+        font-size: calc(18px + 12 * (100vw / 1200));
         font-weight: bold;
         color: rgb(170, 255, 0);
         padding-bottom: 20px;
         width: 100%;
+
+        @media (max-width:$breakpoint992) {
+            font-size: calc(8px + 12 * (100vw / 1200));
+        }
+        @media (max-width:$breakpoint768) {
+            font-size: calc(20px + 12 * (100vw / 1200));
+        }
     }
 
     &-description {
         width: 100%;
-        font-size: calc(12px + 8 * (100vw / 1200));
+        font-size: calc(14px + 8 * (100vw / 1200));
         color: $sub;
 
         @media (max-width:$breakpoint480) {

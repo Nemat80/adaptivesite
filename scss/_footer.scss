@@ -44,12 +44,17 @@
     }
 
     &-logo {
-        padding-top: 10px;
-        width: 140px;
-        height: 100px;
-        background-image: url('../image/color_logo.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+
+        & img {
+            padding-left: 40px;
+            padding-top: 10px;
+            width: 110px;
+        }
     }
 
     &-left-text {
@@ -104,11 +109,12 @@
             align-items: flex-start;
             gap: 200px;
         }
+
         @media (max-width:$breakpoint480) {
             gap: 90px;
         }
-        @media (max-width:$breakpoint768) {
-        }
+
+        @media (max-width:$breakpoint768) {}
 
 
     }
@@ -132,7 +138,7 @@
 
     &-right-list-first {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         flex-direction: column;
         gap: 30px;
@@ -165,8 +171,13 @@
     &-right-item {}
 
     &-right-list-link {
+        text-align: start;
         font-weight: bold;
         font-size: 18px;
         color: #52505d !important;
+
+        &:hover {
+            color: rgb(24, 24, 118);
+        }
     }
 }

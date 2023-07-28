@@ -146,6 +146,20 @@
         height: 90%;
     }
 
+    &-widget {
+
+        @media (max-width:$breakpoint768) {
+            display: none;
+        }
+        
+    }
+    &-widget-sub {
+        display: none;
+        @media (max-width:$breakpoint768) {
+            display: flex;
+        }
+    }
+
 
 
 
