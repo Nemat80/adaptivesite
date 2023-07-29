@@ -119,12 +119,12 @@
     }
 
     &-option-subtitle {
-        font-size: calc(12px + 10 * (100vw / 1200));
+        font-size: calc(15px + 10 * (100vw / 1200));
     }
 
     &-option-title {
         font-weight: bold;
-        font-size: calc(12px + 10 * (100vw / 1200));
+        font-size: calc(15px + 10 * (100vw / 1200));
         color: white;
         text-align: start;
     }
@@ -144,7 +144,7 @@
 
     &-current-price {
         width: 100%;
-        font-size: calc(12px + 10 * (100vw / 1200));
+        font-size: calc(15px + 10 * (100vw / 1200));
         color: rgb(255, 255, 255);
         text-align: start;
         padding: 10px 0px;
@@ -152,7 +152,7 @@
 
     &-price-per-month {
         width: 100%;
-        font-size: calc(12px + 10 * (100vw / 1200));
+        font-size: calc(15px + 10 * (100vw / 1200));
         padding: 10px 0px;
         color: #ffffff;
     }

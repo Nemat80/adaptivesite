@@ -1,11 +1,26 @@
 .learning {
     margin: 0 auto;
-    margin-top: -100px;
+    padding-bottom: 50px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+
+
+    @media (max-width:2000px) {
+        margin-bottom: 100px;
+        margin-top: -100px;
+    }
+    @media (max-width:$breakpoint1450) {
+        margin-bottom: 50px;
+    }
+    @media (max-width:$breakpoint768) {
+    }
+    @media (max-width:$breakpoint480) {
+        padding-bottom: 0px;
+        margin-top: -30px;
+    }
 
     &-container {
         display: flex;
@@ -14,7 +29,6 @@
         flex-direction: column;
         gap: 20px;
         width: 100%;
-        height: 100vh;
     }
 
     &-title {
@@ -117,11 +131,9 @@
         border: none;
         border-radius: 20px;
         padding: 10px 20px;
-        // width: 360px;
-        // height: 150px;
         width: calc(170px + 150 * (100vw / 1200));
         height: calc(100px + 50 * (100vw / 1200));
-        gap: 10px;
+        gap: 8px;
         transition: all 0.3s ease;
 
         &.active {
@@ -145,20 +157,23 @@
         font-size: calc(16px + 8 * (100vw / 1200));
         font-weight: bold;
         text-align: start;
+
+        @media (max-width:$breakpoint480) {
+            font-size: calc((14px + 6 * (100vw /1200)));
+        }
     }
 
     &-tab-desc {
-        font-size: calc(15px + 4 * (100vw / 1200));
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         text-align: start;
-        gap: 30px;
+        gap: 15px;
     }
 
     &-tab-count {
-        padding: 8px 14px;
+        padding: 8px 13px;
         background-color: yellow;
         border-radius: 50%;
         color: black !important;
@@ -167,8 +182,13 @@
     }
 
     &-tab-subtitle {
-        font-size: 20px;
+        align-self: flex-start;
+        font-size: calc(8px + 6 * (100vw / 1200));
         color: $sub;
+        
+        @media (max-width:$breakpoint768) {
+            font-size: calc((8px + 6 * (100vw /1200)));
+        }
     }
 
     @media (max-width: $breakpoint992) {

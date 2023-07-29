@@ -521,7 +521,7 @@ input {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -530,11 +530,10 @@ main {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  margin-top: -60px;
 }
 @media (max-width: 1600px) {
   .auditorium {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 }
 .auditorium-container {
@@ -549,7 +548,7 @@ main {
   line-height: 38px;
   text-align: center;
   color: white;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .auditorium-content {
   display: flex;
@@ -689,12 +688,29 @@ main {
 
 .learning {
   margin: 0 auto;
-  margin-top: -100px;
+  padding-bottom: 50px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+}
+@media (max-width: 2000px) {
+  .learning {
+    margin-bottom: 100px;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 1449.98px) {
+  .learning {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 479.98px) {
+  .learning {
+    padding-bottom: 0px;
+    margin-top: -30px;
+  }
 }
 .learning-container {
   display: flex;
@@ -703,7 +719,6 @@ main {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  height: 100vh;
 }
 .learning-title {
   z-index: 2;
@@ -793,7 +808,7 @@ main {
   padding: 10px 20px;
   width: calc(170px + 12.5vw);
   height: calc(100px + 4.1666666667vw);
-  gap: 10px;
+  gap: 8px;
   transition: all 0.3s ease;
 }
 .learning-tabs-btn.active {
@@ -813,17 +828,21 @@ main {
   font-weight: bold;
   text-align: start;
 }
+@media (max-width: 479.98px) {
+  .learning-tab-title {
+    font-size: calc(14px + 0.5vw);
+  }
+}
 .learning-tab-desc {
-  font-size: calc(15px + 0.3333333333vw);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: start;
-  gap: 30px;
+  gap: 15px;
 }
 .learning-tab-count {
-  padding: 8px 14px;
+  padding: 8px 13px;
   background-color: yellow;
   border-radius: 50%;
   color: black !important;
@@ -831,8 +850,14 @@ main {
   font-size: calc(10px + 0.8333333333vw);
 }
 .learning-tab-subtitle {
-  font-size: 20px;
+  align-self: flex-start;
+  font-size: calc(8px + 0.5vw);
   color: rgb(205, 205, 205);
+}
+@media (max-width: 767.98px) {
+  .learning-tab-subtitle {
+    font-size: calc(8px + 0.5vw);
+  }
 }
 @media (max-width: 991.98px) {
   .learning-title {
@@ -841,12 +866,17 @@ main {
 }
 .training {
   display: flex;
-  padding-top: 250px;
+  padding-top: 50px;
   display: flex;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 479.98px) {
+  .training {
+    padding-top: 0px;
+  }
 }
 .training-container {
   display: flex;
@@ -1597,11 +1627,11 @@ main {
   }
 }
 .callback-option-subtitle {
-  font-size: calc(12px + 0.8333333333vw);
+  font-size: calc(15px + 0.8333333333vw);
 }
 .callback-option-title {
   font-weight: bold;
-  font-size: calc(12px + 0.8333333333vw);
+  font-size: calc(15px + 0.8333333333vw);
   color: white;
   text-align: start;
 }
@@ -1617,14 +1647,14 @@ main {
 }
 .callback-current-price {
   width: 100%;
-  font-size: calc(12px + 0.8333333333vw);
+  font-size: calc(15px + 0.8333333333vw);
   color: rgb(255, 255, 255);
   text-align: start;
   padding: 10px 0px;
 }
 .callback-price-per-month {
   width: 100%;
-  font-size: calc(12px + 0.8333333333vw);
+  font-size: calc(15px + 0.8333333333vw);
   padding: 10px 0px;
   color: #ffffff;
 }
@@ -1812,7 +1842,7 @@ main {
 }
 @media (max-width: 1199.98px) {
   .footer {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 }
 .footer-container {
