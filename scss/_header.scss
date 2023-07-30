@@ -50,6 +50,9 @@
     align-items: center;
     justify-content: space-between;
     width: 85%;
+    gap: 10px;
+
+
 
     @media (max-width:860px) {
         flex-direction: column;
@@ -64,8 +67,9 @@
         gap: 20px;
 
         @media (max-width:$breakpoint992) {
-            width: 65%;
-            font-size: 14px;
+            width: 60%;
+            font-size: 12px;
+            padding-left: 10px;
         }
 
         @media (max-width:860px) {
@@ -151,7 +155,7 @@
 
         &-list {
             justify-content: center;
-            padding-right: 20px;
+            padding-right: 15px;
             width: 70%;
             height: auto;
             padding-top: 70px;
@@ -191,9 +195,16 @@
         }
     }
 
+    &-lang {
+        font-size: 24px;
+        &:hover {
+            color: rgb(96, 96, 232) !important;
+        }
+    }
 
 
 }
+
 
 .call-icon {
     font-size: 27px;
