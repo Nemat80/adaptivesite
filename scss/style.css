@@ -528,9 +528,12 @@ main {
 }
 
 .auditorium {
-  margin-top: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px !important;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0 auto;
 }
 @media (max-height: 380px) {
@@ -696,19 +699,12 @@ main {
 }
 
 .learning {
-  margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   height: auto;
-}
-@media (max-width: 2000px) {
-  .learning {
-    margin-bottom: 100px;
-    margin-top: -100px;
-  }
 }
 @media (max-width: 1449.98px) {
   .learning {
@@ -1067,9 +1063,6 @@ main {
   }
 }
 @media (max-width: 356px) {
-  .training-container {
-    margin-top: -200px;
-  }
   .training-content-lessons-list .lessons-item .lessons-icon {
     font-size: 15px;
   }
@@ -1847,7 +1840,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   margin-top: 200px;
 }
 @media (max-width: 1199.98px) {

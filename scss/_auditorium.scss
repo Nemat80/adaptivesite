@@ -1,7 +1,10 @@
 .auditorium {
-    margin-top: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px !important;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 auto;
 
     @media (max-height:380px) {
