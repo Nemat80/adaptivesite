@@ -3,9 +3,12 @@
     padding-top: 50px;
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
+    margin-bottom: 120px;
+
+
     
 
     @media (max-width:$breakpoint480) {
@@ -21,6 +24,7 @@
     }
 
     &-title {
+        padding-bottom: 70px;
         font-size: calc(20px + 44 * (100vw / 1200));
         font-weight: bold;
         line-height: 38px;
@@ -35,7 +39,7 @@
         flex-direction: column;
         gap: 20px;
         width: 100%;
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
     &-content-item {
@@ -186,7 +190,7 @@
 
 @media (max-width:$breakpoint1450) {
     .training {
-        margin-top: 150px;
+        margin-top: 50px;
 
         &-title {
         }

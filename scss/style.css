@@ -326,13 +326,12 @@ input {
   padding-top: 20px;
   display: flex;
   width: 100%;
-  min-height: 110vh;
+  min-height: 80vh;
   margin: 0 auto;
-  clear: both;
 }
 .top-container {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -439,7 +438,7 @@ input {
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 90%;
+  height: 65vh;
 }
 @media (max-width: 767.98px) {
   .top-widget {
@@ -506,13 +505,7 @@ input {
   }
   .top-right {
     width: 100%;
-    align-items: flex-end;
     height: 100%;
-  }
-  .top-poster {
-    margin-left: -60px;
-    width: 60%;
-    filter: drop-shadow(80px -50px 150px #a9fa07);
   }
   .top-container {
     display: flex;
@@ -535,9 +528,15 @@ main {
 }
 
 .auditorium {
+  margin-top: 100px !important;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+}
+@media (max-height: 380px) {
+  .auditorium {
+    margin-top: 300px !important;
+  }
 }
 @media (max-width: 1600px) {
   .auditorium {
@@ -545,6 +544,8 @@ main {
   }
 }
 .auditorium-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -696,12 +697,12 @@ main {
 
 .learning {
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 @media (max-width: 2000px) {
   .learning {
@@ -877,9 +878,10 @@ main {
   padding-top: 50px;
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: center;
+  margin-bottom: 120px;
 }
 @media (max-width: 479.98px) {
   .training {
@@ -893,6 +895,7 @@ main {
   flex-direction: column;
 }
 .training-title {
+  padding-bottom: 70px;
   font-size: calc(20px + 3.6666666667vw);
   font-weight: bold;
   line-height: 38px;
@@ -906,7 +909,7 @@ main {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .training-content-item {
   position: relative;
@@ -1033,7 +1036,7 @@ main {
 
 @media (max-width: 1449.98px) {
   .training {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 991.98px) {
@@ -1121,7 +1124,7 @@ main {
   left: 0;
   border-radius: 50%;
   background: radial-gradient(circle, rgb(154, 255, 2), transparent);
-  -webkit-filter: blur(90px);
+  -webkit-filter: blur(50px);
   opacity: 0.9;
 }
 .author-img {
@@ -1364,7 +1367,7 @@ main {
 
 .questions {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   padding-top: 80px;
 }
 .questions-container {
@@ -1379,7 +1382,7 @@ main {
   line-height: 38px;
   text-align: center;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .questions-block {
   display: flex;
@@ -1388,7 +1391,6 @@ main {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  min-height: 100vh;
 }
 .questions-item {
   position: relative;

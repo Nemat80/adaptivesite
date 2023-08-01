@@ -2,14 +2,14 @@
     padding-top: 20px;
     display: flex;
     width: 100%;
-    min-height: 110vh;
+    min-height: 80vh;
     margin: 0 auto;
-    clear: both;
+
 
 
     &-container {
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -139,11 +139,10 @@
         align-items: center;
         justify-content: center;
         width: 50%;
-        height: 90%;
+        height: 65vh;
     }
 
     &-widget {
-
         @media (max-width:$breakpoint768) {
             display: none;
         }
@@ -216,15 +215,9 @@
 
         &-right {
             width: 100%;
-            align-items: flex-end;
             height: 100%;
         }
-        &-poster {
-            margin-left: -60px;
-            width: 60%;
-            filter: drop-shadow(80px -50px 150px $neutral);
-        }
-
+     
         &-container {
             display: flex;
             align-items: flex-start;
