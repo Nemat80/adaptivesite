@@ -31,6 +31,7 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+
         &::before {
             content: '';
             width: 100%;
@@ -62,15 +63,17 @@
         border-radius: 15px;
         background-color: #22212b;
         border: 0.5px solid rgb(219, 238, 5);
+
         @media (max-width:$breakpoint768) {
             width: 100%;
         }
 
     }
+
     &-count {
         position: absolute;
-        width: calc(15px + 20 * (100vw / 1200) );
-        height: calc(15px + 20 * (100vw / 1200) );
+        width: calc(15px + 20 * (100vw / 1200));
+        height: calc(15px + 20 * (100vw / 1200));
         top: calc(5px + 10 * (100vw / 1200));
         left: calc(5px + 15 * (100vw / 1200));
         display: flex;
@@ -83,8 +86,8 @@
 
 
         @media (max-width:$breakpoint768) {
-            width: calc(20px + 20 * (100vw / 1200) );
-            height: calc(20px + 20 * (100vw / 1200) );
+            width: calc(20px + 20 * (100vw / 1200));
+            height: calc(20px + 20 * (100vw / 1200));
             margin-top: 25px;
             margin-left: 25px;
         }
@@ -106,20 +109,26 @@
         @media (max-width:$breakpoint992) {
             font-size: calc(8px + 12 * (100vw / 1200));
         }
+
         @media (max-width:$breakpoint768) {
             font-size: calc(20px + 12 * (100vw / 1200));
         }
-    }
-
-    &-description {
-        width: 100%;
-        font-size: calc(14px + 8 * (100vw / 1200));
-        color: $sub;
-
-        @media (max-width:$breakpoint480) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        @media (max-width:320px) {
+            font-size: calc(15px + 12 * (100vw / 1200));
         }
+        
     }
+
+
+&-description {
+    width: 100%;
+    font-size: calc(14px + 8 * (100vw / 1200));
+    color: $sub;
+
+    @media (max-width:$breakpoint480) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 }
