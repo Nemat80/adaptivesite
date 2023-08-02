@@ -1859,9 +1859,10 @@ main {
   }
 }
 .footer-container {
-  height: 70vh;
+  width: 100%;
+  height: 80vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #24232f;
 }
@@ -1923,10 +1924,16 @@ main {
 .footer-right {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 50px;
+  justify-content: space-around;
+  gap: 45px;
   width: 70%;
-  height: 60vh;
+  height: 70vh;
+}
+@media (max-width: 479.98px) {
+  .footer-right {
+    height: 70vh !important;
+    gap: 20px;
+  }
 }
 .footer-right p {
   line-height: 22px;
